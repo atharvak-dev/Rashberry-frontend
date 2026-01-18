@@ -1,0 +1,16 @@
+.container {
+    height: calc(100vh - var(--bottom-bar-height));
+    height: calc(100dvh - var(--bottom-bar-height) - var(--safe-area-bottom));
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.videoWrapper {
+    height: calc(100vh - var(--bottom-bar-height));
+    height: calc(100dvh - var(--bottom-bar-height) - var(--safe-area-bottom));
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    position: relative;
+}

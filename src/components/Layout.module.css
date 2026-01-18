@@ -1,0 +1,15 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--color-bg-primary);
+}
+
+.main {
+    flex: 1;
+    padding-bottom: var(--bottom-bar-height);
+    padding-bottom: calc(var(--bottom-bar-height) + var(--safe-area-bottom));
+    overflow-y: auto;
+    overflow-x: hidden;
+}

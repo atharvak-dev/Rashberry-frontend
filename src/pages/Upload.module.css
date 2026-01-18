@@ -1,0 +1,102 @@
+.container {
+    padding: var(--space-md);
+    padding-top: calc(var(--safe-area-top) + var(--space-md));
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.header {
+    text-align: center;
+}
+
+.title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-xs);
+}
+
+.subtitle {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+.dropZone {
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    text-align: center;
+    transition: all var(--transition-normal);
+    background: var(--color-bg-secondary);
+}
+
+.dropZone.dragging {
+    border-color: var(--color-accent);
+    background: rgba(254, 44, 85, 0.1);
+}
+
+.dropContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.uploadIcon {
+    font-size: 64px;
+}
+
+.dropText {
+    font-size: var(--font-size-md);
+    color: var(--color-text-primary);
+}
+
+.dropSubtext {
+    color: var(--color-text-tertiary);
+    font-size: var(--font-size-sm);
+}
+
+.selectButton {
+    margin-top: var(--space-md);
+    padding: var(--space-sm) var(--space-lg);
+    background: var(--color-accent);
+    color: var(--color-text-primary);
+    border-radius: var(--radius-md);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-md);
+    transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.selectButton:hover {
+    background: var(--color-accent-hover);
+}
+
+.selectButton:active {
+    transform: scale(0.96);
+}
+
+.guidelines {
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+}
+
+.guidelinesTitle {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-sm);
+}
+
+.guidelinesList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-tertiary);
+}
+
+.guidelinesList li::before {
+    content: '✓ ';
+    color: var(--color-success);
+}
