@@ -1,3 +1,6 @@
+/* Import component styles - must be at top */
+@import './components.css';
+
 /* ===================================
    Rashberry Design System
    Mobile-first, dark theme, video-optimized
@@ -10,23 +13,23 @@
   --color-bg-secondary: #121212;
   --color-bg-elevated: #1a1a1a;
   --color-bg-overlay: rgba(0, 0, 0, 0.8);
-  
+
   /* Accent Colors */
   --color-accent: #fe2c55;
   --color-accent-hover: #ff4569;
   --color-accent-glow: rgba(254, 44, 85, 0.4);
-  
+
   /* Text Colors */
   --color-text-primary: #ffffff;
   --color-text-secondary: rgba(255, 255, 255, 0.75);
   --color-text-tertiary: rgba(255, 255, 255, 0.5);
   --color-text-disabled: rgba(255, 255, 255, 0.3);
-  
+
   /* Interactive */
   --color-success: #25f4ee;
   --color-warning: #ffc107;
   --color-error: #fe2c55;
-  
+
   /* Spacing Scale */
   --space-xs: 4px;
   --space-sm: 8px;
@@ -34,7 +37,7 @@
   --space-lg: 24px;
   --space-xl: 32px;
   --space-2xl: 48px;
-  
+
   /* Typography */
   --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-size-xs: 12px;
@@ -46,36 +49,38 @@
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
-  
+
   /* Borders */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 16px;
   --radius-full: 9999px;
-  
+
   /* Shadows */
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
-  
+
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-normal: 250ms ease;
   --transition-slow: 400ms ease;
-  
+
   /* Safe Areas (for notched devices) */
   --safe-area-top: env(safe-area-inset-top, 0px);
   --safe-area-bottom: env(safe-area-inset-bottom, 0px);
   --safe-area-left: env(safe-area-inset-left, 0px);
   --safe-area-right: env(safe-area-inset-right, 0px);
-  
+
   /* Layout */
   --nav-height: 56px;
   --bottom-bar-height: 64px;
 }
 
 /* CSS Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -109,7 +114,8 @@ button {
 }
 
 /* Remove list styles */
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -120,7 +126,8 @@ a {
 }
 
 /* Image reset */
-img, video {
+img,
+video {
   display: block;
   max-width: 100%;
   height: auto;
@@ -129,7 +136,8 @@ img, video {
 /* App Container */
 #root {
   min-height: 100vh;
-  min-height: 100dvh; /* Dynamic viewport height for mobile */
+  min-height: 100dvh;
+  /* Dynamic viewport height for mobile */
   display: flex;
   flex-direction: column;
 }

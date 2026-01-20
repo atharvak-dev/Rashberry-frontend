@@ -12,16 +12,17 @@
     "cap:ios": "npx cap open ios"
   },
   "dependencies": {
-    "solid-js": "^1.9.5",
-    "@solidjs/router": "^0.15.3"
+    "@solidjs/router": "^0.15.3",
+    "clsx": "^2.1.1",
+    "solid-js": "^1.9.5"
   },
   "devDependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/ios": "^6.2.0",
     "typescript": "^5.7.3",
     "vite": "^6.0.7",
-    "vite-plugin-solid": "^2.11.0",
-    "@capacitor/core": "^6.2.0",
-    "@capacitor/cli": "^6.2.0",
-    "@capacitor/android": "^6.2.0",
-    "@capacitor/ios": "^6.2.0"
+    "vite-plugin-solid": "^2.11.0"
   }
 }
